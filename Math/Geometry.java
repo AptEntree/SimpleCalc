@@ -1,17 +1,14 @@
 package SimpleCalc.Math;
-
 /* Geometry calculations include:
  - perimeter
  - area (2d and 3d shapes)
  - volume
  - formulas
 */
-
-import java.util.Math;
 public class Geometry{
     
-    final float PI = 3.141592653589793;
-    float result;
+    static final float PI = 3.141592653589793F;
+    static float result;
 
 	//PERIMETER
 	
@@ -46,7 +43,7 @@ public class Geometry{
 	
 	public static float equilateralTriangleArea(float s){
 		
-		result = ((s * s)* Math.sqrt(3))/4;
+		result = (float) (((s * s)* Math.sqrt(3))/4);
 		return result;
 	}
 	
@@ -84,7 +81,7 @@ public class Geometry{
 	
 	public static float cilinderArea(float r, float h){
 		
-		result = 2 * PI * r (r + h);
+		result = 2 * PI * r *(r + h);
 		return result;
 	}
 	
@@ -99,7 +96,7 @@ public class Geometry{
 	public static float pitagoras(float a, float b){
 		
 		result = (a * a) +  (b * b);
-		return Math.sqrt(result);
+		return (float) Math.sqrt(result);
 	}
 	
 	// VOLUME 
