@@ -5,7 +5,7 @@ package SimpleCalc.Math;
  - volume
  - formulas
 */
-import SimpleCalc.Exception.InvalidNumberError;
+import SimpleCalc.Exception.MidEquationError;
 public class Geometry{
     
     static final float PI = 3.141592653589793F;
@@ -143,7 +143,7 @@ public class Geometry{
 		}
 		
 		if(validator != val.length){
-			throw new InvalidNumberError("ERROR-One of the numbers are invalid! Remember: Zero and negative numbers are not valid for geometry calculations");
+			throw new MidEquationError("ERROR-One of the numbers are invalid! Remember: Zero and negative numbers are not valid for geometry calculations");
 		}
 	}		
 }
