@@ -130,4 +130,19 @@ public class Geometry{
 		result = (1 / 3) * (PI * (r * r)) * h;
 		return result;
 	}
+	
+	// MISC
+	
+	private void validate(float ... val){
+		int validator = 0;
+		for(int i = 0; i val.length; i++){
+			if(val[i] != 0 && val[i] > 0){
+				validator++;
+			}
+		}
+		
+		if(validator != val.length){
+			throw new InvalidNumberError("ERROR-One of the numbers are invalid! Remember: Zero and negative numbers are not valid for geometry calculations");
+		}
+	}		
 }
