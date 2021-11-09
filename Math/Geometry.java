@@ -5,6 +5,7 @@ package SimpleCalc.Math;
  - volume
  - formulas
 */
+import SimpleCalc.Exception.InvalidNumberError;
 public class Geometry{
     
     static final float PI = 3.141592653589793F;
