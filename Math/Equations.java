@@ -13,7 +13,8 @@ public class Equations {
         return x;
     }
     private static double sqrt(double num){
-        double root = 0.0, ans;
+        double root = 0.0;
+        double ans;
         do{
             root += 1;
             ans = root*root;
